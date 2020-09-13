@@ -6,7 +6,7 @@ OBJECTS = $(SOURCES:.cpp=.o)
 
 CXX = icpc
 FLAGS = -std=c++11 -O3 -xHost -Wall -fopenmp -fp-model precise -DTIMING
-LIB = -fopenmp -L/path/to/fftw/lib -lfftw3f -lfftw3f_threads
+LIB = -fopenmp -L/path/to/fftw/lib -lfftw3f -lfftw3f_threads -mkl
 INC = -I/path/to/fftw/include
 
 ################################################################################
